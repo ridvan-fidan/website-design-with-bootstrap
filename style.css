@@ -1,0 +1,57 @@
+/* Hero bölgesi stil ayarları */
+.hero {
+    background-image: url('img/hero.jpg'); 
+    background-size: cover;
+    /* Fotoğrafı clasının boyutunda ortalar */
+    background-position: center;
+    height: 600px; /* Hero bölgesinin yüksekliği */
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* ? Latest Section */
+section#latest .latest-item img{
+  min-height: 100%;
+  width: 100%;
+}
+
+section#latest button{
+  max-height: 250px;
+  padding: 0;
+  overflow: hidden;
+}
+section#latest .latest-item{
+  position: relative;
+}
+section#latest .latest-item:hover .overlay{
+  opacity: 1;
+  background-color: rgba(59, 225, 120, .5);
+}
+
+section#latest .latest-item:hover i{
+  opacity: 1;
+  transform: none;
+}
+section#latest .overlay{
+  position: absolute;
+  top:0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(59, 225, 120, .4);
+  color: #fff;
+  opacity: 0.5;
+  transition: 0.5s all;
+}
+
+section#latest .overlay i{
+  transform: translateZ(20px);
+  transition: 0.5s all;
+  opacity: 0;
+  font-size: 4rem;
+
+}
